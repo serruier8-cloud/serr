@@ -24,27 +24,33 @@ const ROUTES = [
   { path: "/fr/login", expected: 200 },
   { path: "/fr/register", expected: 200 },
   { path: "/fr/contact", expected: 200 },
-  { path: "/fr/dashboard", expected: 200, note: "serves dashboard page (redirect in client-side JS)" },
+  { path: "/fr/dashboard", expected: 307, note: "unauthenticated redirect to /login" },
   { path: "/api/search?q=massira&locale=fr", expected: 200 },
+  { path: "/api/nearest-location?lat=31.6295&lng=-7.9811&locale=fr", expected: 200 },
+  { path: "/api/nearest-location?lat=abc&lng=-7.9&locale=fr", expected: 400 },
   { path: "/api/locksmiths", expected: 200 },
   { path: "/api/locations", expected: 200 },
   { path: "/api/services", expected: 200 },
-  { path: "/fr/nonexistent-page", expected: 200, note: "404 renders in dev mode" },
-  { path: "/fr/marrakech/nonexistent", expected: 200, note: "404 renders in dev mode" },
+  { path: "/fr/nonexistent-page", expected: 404, note: "catch-all returns real 404" },
+  { path: "/fr/marrakech/nonexistent", expected: 404, note: "catch-all returns real 404" },
+  { path: "/api/leads", expected: 201, method: "POST", body: JSON.stringify({ name: "Test User", phone: "+212600000000" }) },
+  { path: "/api/leads", expected: 400, method: "POST", body: JSON.stringify({ name: "A", phone: "1" }) },
 ]
 
 let passed = 0
 let failed = 0
 
-function fetchUrl(url) {
+function fetchUrl(url, method, body) {
   return new Promise((resolve, reject) => {
-    const req = http.get(url, (r) => {
+    const req = http.request(url, { method: method || "GET" }, (r) => {
       let data = ""
       r.on("data", (c) => (data += c))
       r.on("end", () => resolve({ status: r.statusCode || 0, size: data.length }))
     })
     req.on("error", reject)
     req.setTimeout(10000, () => { req.destroy(); reject(new Error("timeout")) })
+    if (body) req.write(body)
+    req.end()
   })
 }
 
@@ -53,7 +59,7 @@ async function main() {
   for (const route of ROUTES) {
     const url = BASE + route.path
     try {
-      const res = await fetchUrl(url)
+      const res = await fetchUrl(url, route.method, route.body)
       if (res.status === route.expected) {
         passed++
         console.log("  OK " + res.status + " " + route.path + " (" + res.size + "b)")

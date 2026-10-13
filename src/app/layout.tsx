@@ -18,7 +18,8 @@ export const metadata: Metadata = {
     template: "%s | Serrurier Marrakech",
   },
   description: "Serrurier professionnel à Marrakech. Intervention rapide 30 min. Ouverture de porte, changement serrure, blindage. Devis gratuit 7j/7.",
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/favicon.ico", apple: "/apple-icon.png" },
+  verification: { google: "ttXOTzYPpnVN2Y6VsnailRyDtR1rr47u2hk8KD3pnzI" },
 }
 
 export default function RootLayout({

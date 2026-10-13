@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/dashboard/", "/login", "/register"],
     },
-    sitemap: "https://serruiermarrakech.ma/sitemap.xml",
+    sitemap: "https://www.serruriermarrakech.ma/sitemap.xml",
   }
 }

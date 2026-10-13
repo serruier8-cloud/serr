@@ -7,18 +7,20 @@ interface PriceItem {
 interface PriceGuideProps {
   items: PriceItem[]
   title?: string
+  locale?: string
 }
 
-export function PriceGuide({ items, title = "Guide des prix" }: PriceGuideProps) {
+export function PriceGuide({ items, title, locale = "fr" }: PriceGuideProps) {
+  const t = (fr: string, ar: string, en: string) => (locale === "ar" ? ar : locale === "en" ? en : fr)
   return (
     <section>
-      <h2 className="text-2xl font-bold mb-6">{title}</h2>
+      <h2 className="text-2xl font-bold mb-6">{title ?? t("Guide des prix", "دليل الأسعار", "Price guide")}</h2>
       <div className="border rounded-lg overflow-hidden">
         <table className="w-full">
           <thead>
             <tr className="bg-muted">
-              <th className="text-left p-3 font-medium text-sm">Service</th>
-              <th className="text-right p-3 font-medium text-sm">Prix</th>
+              <th className="text-left p-3 font-medium text-sm">{t("Service", "الخدمة", "Service")}</th>
+              <th className="text-right p-3 font-medium text-sm">{t("Prix", "السعر", "Price")}</th>
             </tr>
           </thead>
           <tbody>
@@ -34,7 +36,7 @@ export function PriceGuide({ items, title = "Guide des prix" }: PriceGuideProps)
           </tbody>
         </table>
       </div>
-      <p className="text-xs text-muted-foreground mt-2">* Prix indicatifs, un devis gratuit vous sera fourni</p>
+      <p className="text-xs text-muted-foreground mt-2">{t("* Prix indicatifs, un devis gratuit vous sera fourni", "* أسعار تقريبية، سيُمنح لك تقدير مجاني", "* Indicative prices, a free quote will be provided")}</p>
     </section>
   )
 }

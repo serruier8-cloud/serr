@@ -26,6 +26,10 @@ export async function generateMetadata({
     title,
     description,
     openGraph: generateOpenGraph({ locale, title, description, image: article.imageUrl ?? undefined }),
+    alternates: {
+      canonical: `https://www.serruriermarrakech.ma/${locale}/blog/${slug}`,
+      languages: { fr: `https://www.serruriermarrakech.ma/fr/blog/${slug}`, ar: `https://www.serruriermarrakech.ma/ar/blog/${slug}`, en: `https://www.serruriermarrakech.ma/en/blog/${slug}`, "x-default": `https://www.serruriermarrakech.ma/fr/blog/${slug}` },
+    },
   }
 }
 

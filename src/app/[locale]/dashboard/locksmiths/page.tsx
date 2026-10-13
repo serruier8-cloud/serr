@@ -13,7 +13,7 @@ export default async function LocksmithsListPage({
 }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: "dashboard" })
-  const prefix = locale === "fr" ? "" : `/${locale}`
+  const prefix = `/${locale}`
 
   const locksmiths = await prisma.locksmith.findMany({
     include: {
@@ -39,15 +39,15 @@ export default async function LocksmithsListPage({
               <div className="flex-1">
                 <div className="flex items-center gap-3">
                   <h3 className="font-semibold">{l.companyName}</h3>
-                  {l.isApproved && <Badge variant="success">Approuvé</Badge>}
-                  {l.isFeatured && <Badge>En vedette</Badge>}
-                  {l.isVerified && <Badge variant="secondary">Vérifié</Badge>}
+                  {l.isApproved && <Badge variant="success">{locale === "ar" ? "مقبول" : locale === "en" ? "Approved" : "Approuvé"}</Badge>}
+                  {l.isFeatured && <Badge>{locale === "ar" ? "مميز" : locale === "en" ? "Featured" : "En vedette"}</Badge>}
+                  {l.isVerified && <Badge variant="secondary">{locale === "ar" ? "متحقق منه" : locale === "en" ? "Verified" : "Vérifié"}</Badge>}
                 </div>
                 <div className="flex items-center gap-4 mt-1 text-sm text-muted-foreground">
                   <span className="flex items-center gap-1"><MapPin className="h-3 w-3" /> {l.city.name}</span>
                   <span className="flex items-center gap-1"><Phone className="h-3 w-3" /> {l.phone}</span>
                   <span className="flex items-center gap-1"><Star className="h-3 w-3" /> {l.rating.toFixed(1)} ({l._count.reviews})</span>
-                  <span>{l._count.services} services</span>
+                  <span>{l._count.services} {locale === "ar" ? "خدمة" : locale === "en" ? "services" : "services"}</span>
                 </div>
               </div>
               <Link href={`${prefix}/dashboard/locksmiths/${l.id}`}>

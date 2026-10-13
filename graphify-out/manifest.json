@@ -1,0 +1,657 @@
+{
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\eslint.config.mjs": {
+    "mtime": 1785203908.571758,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\next-env.d.ts": {
+    "mtime": 1785871318.103011,
+    "ast_hash": "2a74d3909800ca5467fa83b0ab4a4890",
+    "semantic_hash": "2a74d3909800ca5467fa83b0ab4a4890"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\next.config.ts": {
+    "mtime": 1785233798.9096243,
+    "ast_hash": "b99650f7c35832877aaa8ba4345e2189",
+    "semantic_hash": "b99650f7c35832877aaa8ba4345e2189"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\package.json": {
+    "mtime": 1785337800.9699886,
+    "ast_hash": "8d2312af6c4c3c866d5574e8acd2a327",
+    "semantic_hash": "8d2312af6c4c3c866d5574e8acd2a327"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\postcss.config.mjs": {
+    "mtime": 1785203908.6727557,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\tsconfig.json": {
+    "mtime": 1785203909.7059436,
+    "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
+    "semantic_hash": "ee17fd1c97c735e9f3564e3f5251f125"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\.vercel\\project.json": {
+    "mtime": 1785337733.610259,
+    "ast_hash": "da8a46116448e4711edc08f4eeb5146f",
+    "semantic_hash": "da8a46116448e4711edc08f4eeb5146f"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\prisma\\fast-seed.ts": {
+    "mtime": 1785341037.2773554,
+    "ast_hash": "4f2760d61e8627bc5135cc6b94758b9d",
+    "semantic_hash": "4f2760d61e8627bc5135cc6b94758b9d"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\prisma\\seed-blog.ts": {
+    "mtime": 1785255222.4576936,
+    "ast_hash": "ab942d52e1a309882966efd88ff427c5",
+    "semantic_hash": "ab942d52e1a309882966efd88ff427c5"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\prisma\\seed-locksmiths.ts": {
+    "mtime": 1786236183.489872,
+    "ast_hash": "5b82e798b57e51b06a744401c338d0e2",
+    "semantic_hash": "5b82e798b57e51b06a744401c338d0e2"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\prisma\\seed-services-extra.ts": {
+    "mtime": 1785625018.5382051,
+    "ast_hash": "9d1a94677e57bde8555d3cb1be2a8079",
+    "semantic_hash": "9d1a94677e57bde8555d3cb1be2a8079"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\prisma\\seed.ts": {
+    "mtime": 1786236169.4063,
+    "ast_hash": "92e3fa6d314191cb4ecb0b8160ecf525",
+    "semantic_hash": "92e3fa6d314191cb4ecb0b8160ecf525"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\proxy.ts": {
+    "mtime": 1785233737.245474,
+    "ast_hash": "089125ee86f5d2041fe561bc0bc81266",
+    "semantic_hash": "089125ee86f5d2041fe561bc0bc81266"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\layout.tsx": {
+    "mtime": 1786275910.8034024,
+    "ast_hash": "571e2a0f1ad8779c4985e513d899e44f",
+    "semantic_hash": "571e2a0f1ad8779c4985e513d899e44f"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\not-found.tsx": {
+    "mtime": 1785876068.2146633,
+    "ast_hash": "43afdf4bcb0f88ff4d81a571c203f84b",
+    "semantic_hash": "43afdf4bcb0f88ff4d81a571c203f84b"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\page.tsx": {
+    "mtime": 1785233673.8603945,
+    "ast_hash": "cfa18ad1dd5a3afa8945d026f197bee8",
+    "semantic_hash": "cfa18ad1dd5a3afa8945d026f197bee8"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\robots.ts": {
+    "mtime": 1786273704.3578904,
+    "ast_hash": "1ea76610849f594f6f88d5531bf6be27",
+    "semantic_hash": "1ea76610849f594f6f88d5531bf6be27"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\api\\auth\\register\\route.ts": {
+    "mtime": 1785237811.9002602,
+    "ast_hash": "dfe68386abfba96c26e188e65dd2e20b",
+    "semantic_hash": "dfe68386abfba96c26e188e65dd2e20b"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\api\\auth\\[...nextauth]\\route.ts": {
+    "mtime": 1785233389.0370648,
+    "ast_hash": "198d48412047ca86f3cc8c58f6628b11",
+    "semantic_hash": "198d48412047ca86f3cc8c58f6628b11"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\api\\contact\\route.ts": {
+    "mtime": 1785237936.2312005,
+    "ast_hash": "538052b0eabc7fa39f502f19519adeca",
+    "semantic_hash": "538052b0eabc7fa39f502f19519adeca"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\api\\leads\\route.ts": {
+    "mtime": 1785879198.1555035,
+    "ast_hash": "8c25e24fd4bdcf092bb45ce60bd24bf7",
+    "semantic_hash": "8c25e24fd4bdcf092bb45ce60bd24bf7"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\api\\locations\\route.ts": {
+    "mtime": 1785237937.116289,
+    "ast_hash": "07c06aff0f188d63fb6c28e10cf88a5e",
+    "semantic_hash": "07c06aff0f188d63fb6c28e10cf88a5e"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\api\\locksmiths\\route.ts": {
+    "mtime": 1785237927.9774919,
+    "ast_hash": "548ff98e8c432e0a02256fee21bc47f3",
+    "semantic_hash": "548ff98e8c432e0a02256fee21bc47f3"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\api\\locksmiths\\[id]\\route.ts": {
+    "mtime": 1785237932.4169893,
+    "ast_hash": "a2316ae6ac148e0ed678d8feb784d244",
+    "semantic_hash": "a2316ae6ac148e0ed678d8feb784d244"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\api\\nearest-location\\route.ts": {
+    "mtime": 1785878982.3454967,
+    "ast_hash": "213298a634643feccc7a8b36681666dd",
+    "semantic_hash": "213298a634643feccc7a8b36681666dd"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\api\\reviews\\route.ts": {
+    "mtime": 1785880016.0639355,
+    "ast_hash": "da7141786cf61aff14388dedee64d34b",
+    "semantic_hash": "da7141786cf61aff14388dedee64d34b"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\api\\search\\route.ts": {
+    "mtime": 1785876102.422548,
+    "ast_hash": "1a70e604e0dcd3ebc6ca019b99a452d3",
+    "semantic_hash": "1a70e604e0dcd3ebc6ca019b99a452d3"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\api\\services\\route.ts": {
+    "mtime": 1785237937.8435085,
+    "ast_hash": "1e63e157a005587c72f570a2fe4d6180",
+    "semantic_hash": "1e63e157a005587c72f570a2fe4d6180"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\sitemap-ar.xml\\route.ts": {
+    "mtime": 1786269911.8523302,
+    "ast_hash": "837d6c8dde923c64faa9261da826610c",
+    "semantic_hash": "837d6c8dde923c64faa9261da826610c"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\sitemap-en.xml\\route.ts": {
+    "mtime": 1786269912.4445198,
+    "ast_hash": "b1f307df63c1d7e5b1779c8283371114",
+    "semantic_hash": "b1f307df63c1d7e5b1779c8283371114"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\sitemap-fr.xml\\route.ts": {
+    "mtime": 1786269911.2431426,
+    "ast_hash": "f44aa3bf94a17a0849c5827e56b322b3",
+    "semantic_hash": "f44aa3bf94a17a0849c5827e56b322b3"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\sitemap.xml\\route.ts": {
+    "mtime": 1786269910.659875,
+    "ast_hash": "62e3ffff4d218723f5095f6498540883",
+    "semantic_hash": "62e3ffff4d218723f5095f6498540883"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\layout.tsx": {
+    "mtime": 1786273705.0272298,
+    "ast_hash": "d8bc1ad8985bc3b7f193fe6751014f62",
+    "semantic_hash": "d8bc1ad8985bc3b7f193fe6751014f62"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\not-found.tsx": {
+    "mtime": 1785378361.7554584,
+    "ast_hash": "0ba45a6ee18f6f083b635e16f185316e",
+    "semantic_hash": "0ba45a6ee18f6f083b635e16f185316e"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\page.tsx": {
+    "mtime": 1786273706.2221684,
+    "ast_hash": "66e041699ed3c9c8ddd63e097f67b39b",
+    "semantic_hash": "66e041699ed3c9c8ddd63e097f67b39b"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\blog\\page.tsx": {
+    "mtime": 1786273721.7477233,
+    "ast_hash": "e82a5e5d5dd5d7407dfe83711f3ecf66",
+    "semantic_hash": "e82a5e5d5dd5d7407dfe83711f3ecf66"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\blog\\[slug]\\page.tsx": {
+    "mtime": 1786273723.1185215,
+    "ast_hash": "3b3bf104267248e847276db725a00c8e",
+    "semantic_hash": "3b3bf104267248e847276db725a00c8e"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\contact\\page.tsx": {
+    "mtime": 1786273720.3700266,
+    "ast_hash": "9df77f1006de03992cbcc0a9885b473f",
+    "semantic_hash": "9df77f1006de03992cbcc0a9885b473f"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\dashboard\\layout.tsx": {
+    "mtime": 1785879339.208479,
+    "ast_hash": "5ca9da8519851376506b4005f748238a",
+    "semantic_hash": "5ca9da8519851376506b4005f748238a"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\dashboard\\page.tsx": {
+    "mtime": 1785378363.0419126,
+    "ast_hash": "16be9161400d9582a7c97c137ca2eead",
+    "semantic_hash": "16be9161400d9582a7c97c137ca2eead"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\dashboard\\locations\\page.tsx": {
+    "mtime": 1785876162.3650658,
+    "ast_hash": "0d185f59c0ef9b5225ee156b68807ceb",
+    "semantic_hash": "0d185f59c0ef9b5225ee156b68807ceb"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\dashboard\\locksmiths\\page.tsx": {
+    "mtime": 1785876147.0345383,
+    "ast_hash": "fb99f5b68e4b971072a36cb1d14b7538",
+    "semantic_hash": "fb99f5b68e4b971072a36cb1d14b7538"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\dashboard\\locksmiths\\new\\page.tsx": {
+    "mtime": 1785876249.6917882,
+    "ast_hash": "af4ede17820984e8815d561791744da8",
+    "semantic_hash": "af4ede17820984e8815d561791744da8"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\dashboard\\locksmiths\\[id]\\page.tsx": {
+    "mtime": 1785876185.0591035,
+    "ast_hash": "98d11642cd486fc91f3f16d91ee44f5f",
+    "semantic_hash": "98d11642cd486fc91f3f16d91ee44f5f"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\dashboard\\reviews\\page.tsx": {
+    "mtime": 1785879306.4003377,
+    "ast_hash": "dcf879b6777a945cc370500ef0f26105",
+    "semantic_hash": "dcf879b6777a945cc370500ef0f26105"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\dashboard\\services\\page.tsx": {
+    "mtime": 1785876148.4550047,
+    "ast_hash": "667f3e7b510eb39877d60b46b083779a",
+    "semantic_hash": "667f3e7b510eb39877d60b46b083779a"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\legal\\page.tsx": {
+    "mtime": 1786273719.095778,
+    "ast_hash": "ccd98046bc0e1eeb2e1f2712783aa1d7",
+    "semantic_hash": "ccd98046bc0e1eeb2e1f2712783aa1d7"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\login\\page.tsx": {
+    "mtime": 1785875693.228474,
+    "ast_hash": "10338f320d75226e626f70cfb319db6d",
+    "semantic_hash": "10338f320d75226e626f70cfb319db6d"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\privacy\\page.tsx": {
+    "mtime": 1786273717.9419918,
+    "ast_hash": "51ccedd76eb9d29aa307178ebceb9bb5",
+    "semantic_hash": "51ccedd76eb9d29aa307178ebceb9bb5"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\register\\page.tsx": {
+    "mtime": 1785875691.1904974,
+    "ast_hash": "06fa523294d4e7b1f5cd6bf269a32060",
+    "semantic_hash": "06fa523294d4e7b1f5cd6bf269a32060"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\s\\[slug]\\page.tsx": {
+    "mtime": 1786273790.4328835,
+    "ast_hash": "d1ef0ee3483df6ced9070543f82948fd",
+    "semantic_hash": "d1ef0ee3483df6ced9070543f82948fd"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\services\\page.tsx": {
+    "mtime": 1786273716.6832242,
+    "ast_hash": "09f6f5624d06b1f422c21c8447098918",
+    "semantic_hash": "09f6f5624d06b1f422c21c8447098918"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\[...rest]\\page.tsx": {
+    "mtime": 1786274666.4583392,
+    "ast_hash": "bbe411d226bdfa530c1a40df65daf9d9",
+    "semantic_hash": "bbe411d226bdfa530c1a40df65daf9d9"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\[city]\\page.tsx": {
+    "mtime": 1786273735.7386885,
+    "ast_hash": "9bb1078952db76cafdbdb409ecfc6372",
+    "semantic_hash": "9bb1078952db76cafdbdb409ecfc6372"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\[city]\\[slug]\\page.tsx": {
+    "mtime": 1786273736.9478652,
+    "ast_hash": "0d5dea63acdf83e0a0752fcbf619ae21",
+    "semantic_hash": "0d5dea63acdf83e0a0752fcbf619ae21"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\[locale]\\[city]\\[slug]\\[service]\\page.tsx": {
+    "mtime": 1786273737.5726445,
+    "ast_hash": "aeeafb3401083b3c8cbece1d72fcb957",
+    "semantic_hash": "aeeafb3401083b3c8cbece1d72fcb957"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\dashboard\\ReviewActions.tsx": {
+    "mtime": 1785879292.9068134,
+    "ast_hash": "96fd1f33237726d292498920168e68b1",
+    "semantic_hash": "96fd1f33237726d292498920168e68b1"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\home\\BrandsMarquee.tsx": {
+    "mtime": 1785872229.9875603,
+    "ast_hash": "e5b1e1c9c5b53d5bbb7795ba3f7c09c0",
+    "semantic_hash": "e5b1e1c9c5b53d5bbb7795ba3f7c09c0"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\home\\CTASection.tsx": {
+    "mtime": 1785872256.9430878,
+    "ast_hash": "5d0801f0e947ef01d682e9b1756c7e7c",
+    "semantic_hash": "5d0801f0e947ef01d682e9b1756c7e7c"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\home\\EmergencySection.tsx": {
+    "mtime": 1785875179.870765,
+    "ast_hash": "db9387085a1a7be6027be3f1deace9b0",
+    "semantic_hash": "db9387085a1a7be6027be3f1deace9b0"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\home\\FAQSectionWrapper.tsx": {
+    "mtime": 1785876564.518052,
+    "ast_hash": "d28bd896203ddbe31ffc8bd50960ba37",
+    "semantic_hash": "d28bd896203ddbe31ffc8bd50960ba37"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\home\\FeatureSplitSection.tsx": {
+    "mtime": 1785872201.6890447,
+    "ast_hash": "4842c007e5252c3b0fc61bfaeb2c3537",
+    "semantic_hash": "4842c007e5252c3b0fc61bfaeb2c3537"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\home\\HeroSection.tsx": {
+    "mtime": 1785872091.540466,
+    "ast_hash": "4904cb2812d02b4784f59b8bcdc25285",
+    "semantic_hash": "4904cb2812d02b4784f59b8bcdc25285"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\home\\HowItWorksSection.tsx": {
+    "mtime": 1785872145.4746542,
+    "ast_hash": "fc9bb196d1df283f997f244950cc9c76",
+    "semantic_hash": "fc9bb196d1df283f997f244950cc9c76"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\home\\QuartierSection.tsx": {
+    "mtime": 1785875142.7719178,
+    "ast_hash": "be22cc986c0acde89400f10280fb3ddb",
+    "semantic_hash": "be22cc986c0acde89400f10280fb3ddb"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\home\\ServiceSection.tsx": {
+    "mtime": 1785875133.7105608,
+    "ast_hash": "1862e084e126b9589cd0768b7ac6550b",
+    "semantic_hash": "1862e084e126b9589cd0768b7ac6550b"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\home\\SmartLockSection.tsx": {
+    "mtime": 1785872117.5410168,
+    "ast_hash": "750b9f3cec3c7e69b00e208df81369e8",
+    "semantic_hash": "750b9f3cec3c7e69b00e208df81369e8"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\home\\StatsSection.tsx": {
+    "mtime": 1785875109.3301885,
+    "ast_hash": "3b9e3f01531f08271bac815c21493c2b",
+    "semantic_hash": "3b9e3f01531f08271bac815c21493c2b"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\home\\TestimonialsSection.tsx": {
+    "mtime": 1785872173.652238,
+    "ast_hash": "2bff44170d1b50585a1838df1bf0020f",
+    "semantic_hash": "2bff44170d1b50585a1838df1bf0020f"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\home\\WhyChooseSection.tsx": {
+    "mtime": 1785337175.4547834,
+    "ast_hash": "3f12781396115409a3a8ffbc22214e2e",
+    "semantic_hash": "3f12781396115409a3a8ffbc22214e2e"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\layout\\Breadcrumbs.tsx": {
+    "mtime": 1785233258.084042,
+    "ast_hash": "c2e010d8d7d3bfd9945e061694f8a982",
+    "semantic_hash": "c2e010d8d7d3bfd9945e061694f8a982"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\layout\\Footer.tsx": {
+    "mtime": 1786236042.2757986,
+    "ast_hash": "f1c1636cf1eff3d3ae43c7a79719d457",
+    "semantic_hash": "f1c1636cf1eff3d3ae43c7a79719d457"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\layout\\Header.tsx": {
+    "mtime": 1786236035.1544864,
+    "ast_hash": "c9c0fb4a0a2cf733f70286b09c5464f6",
+    "semantic_hash": "c9c0fb4a0a2cf733f70286b09c5464f6"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\layout\\LanguageSwitcher.tsx": {
+    "mtime": 1785233256.5921783,
+    "ast_hash": "2a0b384147636416d5a1b744620e01b0",
+    "semantic_hash": "2a0b384147636416d5a1b744620e01b0"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\layout\\SessionProvider.tsx": {
+    "mtime": 1785237812.37251,
+    "ast_hash": "b112e16d2b2b105af48b5a8f95d52d94",
+    "semantic_hash": "b112e16d2b2b105af48b5a8f95d52d94"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\locksmith\\ContactForm.tsx": {
+    "mtime": 1785875649.1038468,
+    "ast_hash": "ab6c59ce719e544637b3ac3f36117ee1",
+    "semantic_hash": "ab6c59ce719e544637b3ac3f36117ee1"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\locksmith\\EmergencyCTA.tsx": {
+    "mtime": 1785879043.114969,
+    "ast_hash": "7a297c3bdd62334cc68741af069b4bf9",
+    "semantic_hash": "7a297c3bdd62334cc68741af069b4bf9"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\locksmith\\FAQSection.tsx": {
+    "mtime": 1785233303.4968152,
+    "ast_hash": "aa8e95178c07be2c8a2377eed4546ec3",
+    "semantic_hash": "aa8e95178c07be2c8a2377eed4546ec3"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\locksmith\\LeadCapture.tsx": {
+    "mtime": 1785879211.6158924,
+    "ast_hash": "879872fab311820fc5c8bae0584fc731",
+    "semantic_hash": "879872fab311820fc5c8bae0584fc731"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\locksmith\\LocksmithCard.tsx": {
+    "mtime": 1785876125.7823417,
+    "ast_hash": "54d170c9091dcb1c5ea58b7073bf3c69",
+    "semantic_hash": "54d170c9091dcb1c5ea58b7073bf3c69"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\locksmith\\PriceEstimator.tsx": {
+    "mtime": 1785879483.5020113,
+    "ast_hash": "b305e4a615e2f3badf06beddee859de2",
+    "semantic_hash": "b305e4a615e2f3badf06beddee859de2"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\locksmith\\PriceGuide.tsx": {
+    "mtime": 1785875357.0443108,
+    "ast_hash": "c5b64d53f8fd0ff96446ae0b07822bda",
+    "semantic_hash": "c5b64d53f8fd0ff96446ae0b07822bda"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\locksmith\\ReviewForm.tsx": {
+    "mtime": 1785879352.2044113,
+    "ast_hash": "b27e905e3250394be06f69af0e7a05aa",
+    "semantic_hash": "b27e905e3250394be06f69af0e7a05aa"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\locksmith\\ReviewList.tsx": {
+    "mtime": 1785875617.152922,
+    "ast_hash": "4f92786874942848c677fa1300377352",
+    "semantic_hash": "4f92786874942848c677fa1300377352"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\locksmith\\RichSchema.tsx": {
+    "mtime": 1785245058.8155947,
+    "ast_hash": "a882c8149a2b6f49ba0a489c331a1f3d",
+    "semantic_hash": "a882c8149a2b6f49ba0a489c331a1f3d"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\locksmith\\SchemaOrg.tsx": {
+    "mtime": 1785245060.0232332,
+    "ast_hash": "b625e77b2231e05d538cb8f5f83704df",
+    "semantic_hash": "b625e77b2231e05d538cb8f5f83704df"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\locksmith\\ServiceList.tsx": {
+    "mtime": 1785875337.2053788,
+    "ast_hash": "18906d35e85e5ff4693f2b7210924a88",
+    "semantic_hash": "18906d35e85e5ff4693f2b7210924a88"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\locksmith\\SmartLockContent.tsx": {
+    "mtime": 1785871466.7905715,
+    "ast_hash": "09867d4e4ccec7c89c4e52e6f2a15628",
+    "semantic_hash": "09867d4e4ccec7c89c4e52e6f2a15628"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\map\\LocationMap.tsx": {
+    "mtime": 1785879778.4440298,
+    "ast_hash": "1bb77c2abc95c41aefcb51158f31a57d",
+    "semantic_hash": "1bb77c2abc95c41aefcb51158f31a57d"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\motion\\AnimatedCounter.tsx": {
+    "mtime": 1785336578.7406504,
+    "ast_hash": "bb92e93953a6a4821688e9a60fe40c4d",
+    "semantic_hash": "bb92e93953a6a4821688e9a60fe40c4d"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\motion\\AnimateInView.tsx": {
+    "mtime": 1785336496.0327408,
+    "ast_hash": "f05ee5f22790ee8308c30247b7916c80",
+    "semantic_hash": "f05ee5f22790ee8308c30247b7916c80"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\motion\\StaggerContainer.tsx": {
+    "mtime": 1785336682.457572,
+    "ast_hash": "b6cf97ab8134d67702d4a40386b62a05",
+    "semantic_hash": "b6cf97ab8134d67702d4a40386b62a05"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\search\\LastLocationBanner.tsx": {
+    "mtime": 1785879756.557617,
+    "ast_hash": "75c36214a2b612ab680cdccb04cf1641",
+    "semantic_hash": "75c36214a2b612ab680cdccb04cf1641"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\search\\SearchBar.tsx": {
+    "mtime": 1785879767.7409139,
+    "ast_hash": "1c18d7703eef69193ed3026c5b3629c4",
+    "semantic_hash": "1c18d7703eef69193ed3026c5b3629c4"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\ui\\avatar.tsx": {
+    "mtime": 1785233201.4604588,
+    "ast_hash": "a7bf139a6e1cb28ed42641c5b93198b2",
+    "semantic_hash": "a7bf139a6e1cb28ed42641c5b93198b2"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\ui\\badge.tsx": {
+    "mtime": 1785336527.2913456,
+    "ast_hash": "503ad76d3b87158f9de65129242274a3",
+    "semantic_hash": "503ad76d3b87158f9de65129242274a3"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\ui\\button.tsx": {
+    "mtime": 1785336523.2322414,
+    "ast_hash": "7da52099de8a658a78ba0f66bd66f96d",
+    "semantic_hash": "7da52099de8a658a78ba0f66bd66f96d"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\ui\\card.tsx": {
+    "mtime": 1785336530.443897,
+    "ast_hash": "6d8e6d9fe3c296af668277e9ca32fdb7",
+    "semantic_hash": "6d8e6d9fe3c296af668277e9ca32fdb7"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\ui\\dialog.tsx": {
+    "mtime": 1785233205.972159,
+    "ast_hash": "a793ac0b8019ae378aa70aa9c2077d0a",
+    "semantic_hash": "a793ac0b8019ae378aa70aa9c2077d0a"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\ui\\input.tsx": {
+    "mtime": 1785233194.799776,
+    "ast_hash": "9e6df0d7f27150771642d4564da030d3",
+    "semantic_hash": "9e6df0d7f27150771642d4564da030d3"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\ui\\select.tsx": {
+    "mtime": 1785233210.4125757,
+    "ast_hash": "9ea1cd3bb92616528cc289e5aa407171",
+    "semantic_hash": "9ea1cd3bb92616528cc289e5aa407171"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\ui\\separator.tsx": {
+    "mtime": 1785233199.7067041,
+    "ast_hash": "0f02ac726d8c9d9f7083cc75dfd9a2f4",
+    "semantic_hash": "0f02ac726d8c9d9f7083cc75dfd9a2f4"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\components\\ui\\tabs.tsx": {
+    "mtime": 1785233212.8237038,
+    "ast_hash": "5dfcb0d61149b3a7f7a4cb0fbc0f105c",
+    "semantic_hash": "5dfcb0d61149b3a7f7a4cb0fbc0f105c"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\i18n\\request.ts": {
+    "mtime": 1785233691.7498412,
+    "ast_hash": "68ec8ccea5b1d4542b8e59c39ba3c700",
+    "semantic_hash": "68ec8ccea5b1d4542b8e59c39ba3c700"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\lib\\auth.config.ts": {
+    "mtime": 1785237809.1802864,
+    "ast_hash": "4a4263f7b684155bfc4dcd619b948f64",
+    "semantic_hash": "4a4263f7b684155bfc4dcd619b948f64"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\lib\\auth.ts": {
+    "mtime": 1785336729.0980358,
+    "ast_hash": "a54e9310e6d4aa4847f7f14372bdbbad",
+    "semantic_hash": "a54e9310e6d4aa4847f7f14372bdbbad"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\lib\\content.ts": {
+    "mtime": 1785375471.6000984,
+    "ast_hash": "a836118b826c52e1c05deac19ba84958",
+    "semantic_hash": "a836118b826c52e1c05deac19ba84958"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\lib\\geo.ts": {
+    "mtime": 1785877748.3036184,
+    "ast_hash": "596ce14fb0e1b1d88f554370ad78a7ec",
+    "semantic_hash": "596ce14fb0e1b1d88f554370ad78a7ec"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\lib\\i18n.ts": {
+    "mtime": 1785232511.2639935,
+    "ast_hash": "27d4b59ea095b144c05c8a7a20d24d64",
+    "semantic_hash": "27d4b59ea095b144c05c8a7a20d24d64"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\lib\\prisma.ts": {
+    "mtime": 1785232503.9169168,
+    "ast_hash": "c237bf5ec6b62122553b5678b9739e1c",
+    "semantic_hash": "c237bf5ec6b62122553b5678b9739e1c"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\lib\\routing.ts": {
+    "mtime": 1785234998.8312626,
+    "ast_hash": "3a938acc6985e4462fb2147c8b03cfa1",
+    "semantic_hash": "3a938acc6985e4462fb2147c8b03cfa1"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\lib\\seo.ts": {
+    "mtime": 1786273703.8269744,
+    "ast_hash": "09f1b2ddd32e23711177d9690f482442",
+    "semantic_hash": "09f1b2ddd32e23711177d9690f482442"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\lib\\service-slugs.ts": {
+    "mtime": 1785625092.9038527,
+    "ast_hash": "11b21bdf6e062eec50fa8013c918d643",
+    "semantic_hash": "11b21bdf6e062eec50fa8013c918d643"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\lib\\sitemap-data.ts": {
+    "mtime": 1786273703.597753,
+    "ast_hash": "21b6d02a70b325776f677f413ecc4a8c",
+    "semantic_hash": "21b6d02a70b325776f677f413ecc4a8c"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\lib\\smart-lock-content.ts": {
+    "mtime": 1785848564.8936143,
+    "ast_hash": "d53a09569015d973b35d805ce9afeb67",
+    "semantic_hash": "d53a09569015d973b35d805ce9afeb67"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\lib\\utils.ts": {
+    "mtime": 1785232500.983539,
+    "ast_hash": "68ccb8a7948f97185ab55099987a0b31",
+    "semantic_hash": "68ccb8a7948f97185ab55099987a0b31"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\messages\\ar.json": {
+    "mtime": 1786236065.4720693,
+    "ast_hash": "b16b3d126aa044a90d45ee7f20961b6c",
+    "semantic_hash": "b16b3d126aa044a90d45ee7f20961b6c"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\messages\\en.json": {
+    "mtime": 1785255259.2632458,
+    "ast_hash": "f2f613628a54d541b2c716d10954c8bf",
+    "semantic_hash": "f2f613628a54d541b2c716d10954c8bf"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\messages\\fr.json": {
+    "mtime": 1785255250.7644577,
+    "ast_hash": "a30867cda8abc1692100564c390b88a0",
+    "semantic_hash": "a30867cda8abc1692100564c390b88a0"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\tests\\routes.test.mjs": {
+    "mtime": 1786275464.0324807,
+    "ast_hash": "79f1d76e70238f915eb9fd58f9b54282",
+    "semantic_hash": "79f1d76e70238f915eb9fd58f9b54282"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\README.md": {
+    "mtime": 1785203908.5009794,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": "f15aaa42d5d299d091b1171097ea56ad"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\.github\\workflows\\ci.yml": {
+    "mtime": 1785255362.2543595,
+    "ast_hash": "69bbcc13b047212473a32e606898abd7",
+    "semantic_hash": "69bbcc13b047212473a32e606898abd7"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\.vercel\\README.txt": {
+    "mtime": 1785337733.6112547,
+    "ast_hash": "2b13c79d37d6ed82a3255b83b6815034",
+    "semantic_hash": "2b13c79d37d6ed82a3255b83b6815034"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\public\\googlefa973a498c238a88.html": {
+    "mtime": 1786269301.5883539,
+    "ast_hash": "c27884bce4317e0aea7f098525c4adbe",
+    "semantic_hash": "c27884bce4317e0aea7f098525c4adbe"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\public\\file.svg": {
+    "mtime": 1785203908.6996624,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\public\\globe.svg": {
+    "mtime": 1785203908.770596,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\public\\next.svg": {
+    "mtime": 1785203908.8063743,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\public\\vercel.svg": {
+    "mtime": 1785203908.8469996,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\public\\window.svg": {
+    "mtime": 1785203908.8822887,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": "a2760511c65806022ad20adf74370ff3"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\apple-icon.png": {
+    "mtime": 1786275781.3709092,
+    "ast_hash": "5ad405f0e410f64d89751866f7bbd7b0",
+    "semantic_hash": "5ad405f0e410f64d89751866f7bbd7b0"
+  },
+  "C:\\Users\\store one\\Documents\\serruiermarrakech\\src\\app\\icon.svg": {
+    "mtime": 1786275758.045954,
+    "ast_hash": "3360d08688ad7dd1f6e98d1751f8fa07",
+    "semantic_hash": "3360d08688ad7dd1f6e98d1751f8fa07"
+  }
+}

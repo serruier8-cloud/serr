@@ -31,8 +31,8 @@ export default async function ServicesPage({
                 <h3 className="font-semibold">{s.nameFr}</h3>
                 <p className="text-sm text-muted-foreground">{s.nameAr} · {s.nameEn}</p>
                 <div className="flex items-center gap-2 mt-1">
-                  {s.priceFrom && <Badge variant="secondary">À partir de {s.priceFrom} MAD</Badge>}
-                  <Badge variant="outline">{s._count.locksmiths} serruriers</Badge>
+                  {s.priceFrom && <Badge variant="secondary">{locale === "ar" ? "ابتداءً من" : locale === "en" ? "From" : "À partir de"} {s.priceFrom} MAD</Badge>}
+                  <Badge variant="outline">{s._count.locksmiths} {locale === "ar" ? "سراجون" : locale === "en" ? "locksmiths" : "serruriers"}</Badge>
                 </div>
               </div>
             </CardContent>

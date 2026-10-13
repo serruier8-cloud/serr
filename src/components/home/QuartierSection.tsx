@@ -18,13 +18,17 @@ export function QuartierSection({ quartiers, locale, title }: { quartiers: Quart
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">{title}</h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Nous intervenons dans tous les quartiers de Marrakech et ses environs
+            {locale === "ar"
+              ? "نتدخل في جميع أحياء مراكش وضواحيها"
+              : locale === "en"
+              ? "We operate in all districts of Marrakech and its surroundings"
+              : "Nous intervenons dans tous les quartiers de Marrakech et ses environs"}
           </p>
         </div>
         <StaggerContainer className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {quartiers.map((q) => (
             <motion.div key={q.slug} variants={staggerItemVariants}>
-              <Link href={`/${locale === "fr" ? "" : locale}/marrakech/${q.slug}`}>
+              <Link href={`/${locale}/marrakech/${q.slug}`}>
                 <Card className="card-hover cursor-pointer border-border/60">
                   <CardContent className="p-4 text-center">
                     <div className="bg-primary/5 rounded-xl p-2.5 w-fit mx-auto mb-2.5">

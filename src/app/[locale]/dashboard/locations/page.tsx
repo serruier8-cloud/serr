@@ -24,15 +24,15 @@ export default async function LocationsPage({
       <Card>
         <CardContent className="p-0">
           <div className="grid grid-cols-4 gap-4 p-4 border-b font-medium text-sm text-muted-foreground">
-            <span>Nom</span>
-            <span>Type</span>
-            <span>Arrondissement</span>
-            <span>Serruriers</span>
+            <span>{locale === "ar" ? "الاسم" : locale === "en" ? "Name" : "Nom"}</span>
+            <span>{locale === "ar" ? "النوع" : locale === "en" ? "Type" : "Type"}</span>
+            <span>{locale === "ar" ? "المقاطعة" : locale === "en" ? "Arrondissement" : "Arrondissement"}</span>
+            <span>{locale === "ar" ? "السراجون" : locale === "en" ? "Locksmiths" : "Serruriers"}</span>
           </div>
           {locations.map(l => (
             <div key={l.id} className="grid grid-cols-4 gap-4 p-4 border-b last:border-0 text-sm hover:bg-muted/50">
               <span className="flex items-center gap-2"><MapPin className="h-3 w-3 text-muted-foreground" /> {l.name}</span>
-              <span><Badge variant="outline">{l.type.replace(/_/g, " ")}</Badge></span>
+              <span><Badge variant="outline">{locale === "ar" ? (l.type === "ARRONDISSEMENT" ? "مقاطعة" : l.type === "QUARTIER" ? "حي" : l.type.replace(/_/g, " ")) : locale === "en" ? (l.type === "ARRONDISSEMENT" ? "Arrondissement" : l.type === "QUARTIER" ? "District" : l.type.replace(/_/g, " ")) : l.type.replace(/_/g, " ")}</Badge></span>
               <span className="text-muted-foreground">{l.arrondissement || "-"}</span>
               <span>{l._count.locksmiths}</span>
             </div>

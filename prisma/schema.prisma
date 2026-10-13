@@ -248,6 +248,21 @@ model Translation {
   @@index([key])
 }
 
+model Lead {
+  id            String   @id @default(cuid())
+  name          String
+  phone         String
+  service       String?
+  message       String?
+  locationSlug  String?
+  locale        String   @default("fr")
+  status        String   @default("NEW")
+  createdAt     DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([status])
+}
+
 model Article {
   id        String   @id @default(cuid())
   slug      String   @unique

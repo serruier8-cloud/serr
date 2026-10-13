@@ -20,13 +20,17 @@ export function ServiceSection({ services, locale, title }: { services: ServiceI
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">{title}</h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          Découvrez tous nos services de serrurerie professionnelle à Marrakech
+          {locale === "ar"
+            ? "اكتشف جميع خدماتنا الاحترافية للسراجة في مراكش"
+            : locale === "en"
+            ? "Discover all our professional locksmith services in Marrakech"
+            : "Découvrez tous nos services de serrurerie professionnelle à Marrakech"}
         </p>
       </div>
       <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {services.map((service) => (
           <motion.div key={service.slug} variants={staggerItemVariants}>
-            <Link href={`/${locale === "fr" ? "" : locale}/marrakech/${service.slug}`}>
+            <Link href={`/${locale}/${service.slug}`}>
               <Card className="h-full card-hover cursor-pointer border-border/60">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
@@ -40,7 +44,7 @@ export function ServiceSection({ services, locale, title }: { services: ServiceI
                       )}
                       {service.priceFrom != null && (
                         <Badge variant="secondary" className="mt-3 text-xs font-medium">
-                          À partir de {service.priceFrom} MAD
+                          {locale === "ar" ? "ابتداءً من" : locale === "en" ? "From" : "À partir de"} {service.priceFrom} MAD
                         </Badge>
                       )}
                     </div>

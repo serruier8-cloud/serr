@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server"
 import Link from "next/link"
 import { redirect } from "next/navigation"
 import { auth } from "@/lib/auth"
-import { LayoutDashboard, Wrench, MapPin, Star, LogOut } from "lucide-react"
+import { LayoutDashboard, Wrench, MapPin, Star, MessageSquare, LogOut } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default async function DashboardLayout({
@@ -15,17 +15,18 @@ export default async function DashboardLayout({
   const { locale } = await params
   const session = await auth()
   if (!session?.user) {
-    redirect(`/${locale === "fr" ? "" : locale}/login`)
+    redirect(`/${locale}/login`)
   }
   const t = await getTranslations({ locale, namespace: "dashboard" })
   const at = await getTranslations({ locale, namespace: "auth" })
-  const prefix = locale === "fr" ? "" : `/${locale}`
+  const prefix = `/${locale}`
 
   const sidebarLinks = [
     { href: `${prefix}/dashboard`, label: t("home"), icon: LayoutDashboard },
     { href: `${prefix}/dashboard/locksmiths`, label: t("locksmiths"), icon: Wrench },
     { href: `${prefix}/dashboard/locations`, label: t("locations"), icon: MapPin },
     { href: `${prefix}/dashboard/services`, label: t("services"), icon: Star },
+    { href: `${prefix}/dashboard/reviews`, label: t("reviews"), icon: MessageSquare },
   ]
 
   return (

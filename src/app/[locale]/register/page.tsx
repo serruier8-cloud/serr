@@ -18,7 +18,7 @@ export default function RegisterPage() {
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
 
-  const prefix = locale === "fr" ? "" : `/${locale}`
+  const prefix = `/${locale}`
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -31,7 +31,7 @@ export default function RegisterPage() {
     })
     if (!res.ok) {
       const data = await res.json()
-      setError(data.error || "Erreur lors de l'inscription")
+      setError(data.error || (locale === "ar" ? "خطأ أثناء التسجيل" : locale === "en" ? "Registration error" : "Erreur lors de l'inscription"))
       setLoading(false)
     } else {
       router.push(`${prefix}/login`)
@@ -49,7 +49,7 @@ export default function RegisterPage() {
           <form onSubmit={handleSubmit} className="space-y-4">
             {error && <p className="text-sm text-destructive text-center">{error}</p>}
             <Input type="text" placeholder={t("name")} value={name} onChange={(e) => setName(e.target.value)} required />
-            <Input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <Input type="email" placeholder={locale === "ar" ? "البريد الإلكتروني" : locale === "en" ? "Email" : "Email"} value={email} onChange={(e) => setEmail(e.target.value)} required />
             <Input type="password" placeholder={t("password")} value={password} onChange={(e) => setPassword(e.target.value)} required minLength={6} />
             <Button type="submit" className="w-full" disabled={loading}>
               {loading ? t("registering") : t("register")}

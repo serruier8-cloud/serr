@@ -23,13 +23,15 @@ export function FAQSection({ items, title = "Questions fréquentes" }: FAQSectio
       <div className="space-y-3">
         {items.map((item, i) => (
           <div key={i} className="border rounded-lg overflow-hidden">
-            <button
-              onClick={() => setOpenIndex(openIndex === i ? null : i)}
-              className="w-full flex items-center justify-between p-4 text-left font-medium hover:bg-muted/50 transition-colors"
-            >
-              <span>{item.question}</span>
-              <ChevronDown className={cn("h-5 w-5 transition-transform", openIndex === i && "rotate-180")} />
-            </button>
+            <h3 className="m-0">
+              <button
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                className="w-full flex items-center justify-between p-4 text-left font-medium hover:bg-muted/50 transition-colors"
+              >
+                <span>{item.question}</span>
+                <ChevronDown className={cn("h-5 w-5 transition-transform", openIndex === i && "rotate-180")} />
+              </button>
+            </h3>
             {openIndex === i && (
               <div className="px-4 pb-4 text-sm text-muted-foreground">
                 {item.answer}

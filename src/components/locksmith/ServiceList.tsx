@@ -16,8 +16,8 @@ interface ServiceListProps {
   locale?: string
 }
 
-export function ServiceList({ services, locationSlug }: ServiceListProps) {
-  const prefix = locationSlug ? `/marrakech/${locationSlug}` : "/marrakech"
+export function ServiceList({ services, locationSlug, locale = "fr" }: ServiceListProps) {
+  const prefix = locationSlug ? `/${locale}/marrakech/${locationSlug}` : `/${locale}`
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -36,7 +36,7 @@ export function ServiceList({ services, locationSlug }: ServiceListProps) {
                   )}
                   {service.priceFrom && (
                     <Badge variant="secondary" className="mt-2 text-xs">
-                      À partir de {service.priceFrom} MAD
+                      {locale === "ar" ? "ابتداءً من" : locale === "en" ? "From" : "À partir de"} {service.priceFrom} MAD
                     </Badge>
                   )}
                 </div>

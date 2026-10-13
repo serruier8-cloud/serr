@@ -29,7 +29,7 @@ export default function NewLocksmithPage() {
   const [selectedLocations, setSelectedLocations] = useState<string[]>([])
   const [selectedServices, setSelectedServices] = useState<string[]>([])
 
-  const prefix = locale === "fr" ? "" : `/${locale}`
+  const prefix = `/${locale}`
 
   useEffect(() => {
     fetch("/api/locations").then(r => r.json()).then(setLocations)
@@ -64,34 +64,34 @@ export default function NewLocksmithPage() {
       body: JSON.stringify({ ...form, locationIds: selectedLocations, serviceIds: selectedServices }),
     })
     if (res.ok) {
-      toast.success("Serrurier créé avec succès")
+      toast.success(locale === "ar" ? "تم إنشاء السراجي بنجاح" : locale === "en" ? "Locksmith created successfully" : "Serrurier créé avec succès")
       router.push(`${prefix}/dashboard/locksmiths`)
     } else {
-      toast.error("Erreur lors de la création")
+      toast.error(locale === "ar" ? "خطأ أثناء الإنشاء" : locale === "en" ? "Error while creating" : "Erreur lors de la création")
       setLoading(false)
     }
   }
 
   return (
     <div className="max-w-2xl">
-      <h1 className="text-2xl font-bold mb-6">Nouveau serrurier</h1>
+      <h1 className="text-2xl font-bold mb-6">{locale === "ar" ? "سراجي جديد" : locale === "en" ? "New locksmith" : "Nouveau serrurier"}</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <Card>
           <CardContent className="p-4 space-y-4">
-            <Input placeholder="Nom de l'entreprise" value={form.companyName} onChange={e => setForm(f => ({...f, companyName: e.target.value}))} required />
+            <Input placeholder={locale === "ar" ? "اسم الشركة" : locale === "en" ? "Company name" : "Nom de l'entreprise"} value={form.companyName} onChange={e => setForm(f => ({...f, companyName: e.target.value}))} required />
             <Input placeholder="Slug (ex: serrurier-massira)" value={form.slug} onChange={e => setForm(f => ({...f, slug: e.target.value}))} required />
             <Input type="email" placeholder="Email" value={form.email} onChange={e => setForm(f => ({...f, email: e.target.value}))} />
-            <Input placeholder="Téléphone" value={form.phone} onChange={e => setForm(f => ({...f, phone: e.target.value}))} required />
+            <Input placeholder={locale === "ar" ? "الهاتف" : locale === "en" ? "Phone" : "Téléphone"} value={form.phone} onChange={e => setForm(f => ({...f, phone: e.target.value}))} required />
             <Input placeholder="WhatsApp" value={form.whatsapp} onChange={e => setForm(f => ({...f, whatsapp: e.target.value}))} />
-            <textarea className="w-full min-h-[100px] rounded-md border border-input bg-background px-3 py-2 text-sm" placeholder="Description FR" value={form.descriptionFr} onChange={e => setForm(f => ({...f, descriptionFr: e.target.value}))} />
+            <textarea className="w-full min-h-[100px] rounded-md border border-input bg-background px-3 py-2 text-sm" placeholder={locale === "ar" ? "الوصف" : locale === "en" ? "Description" : "Description FR"} value={form.descriptionFr} onChange={e => setForm(f => ({...f, descriptionFr: e.target.value}))} />
             <div className="grid grid-cols-2 gap-4">
               <Input type="number" step="any" placeholder="Latitude" value={form.latitude} onChange={e => setForm(f => ({...f, latitude: e.target.value}))} required />
               <Input type="number" step="any" placeholder="Longitude" value={form.longitude} onChange={e => setForm(f => ({...f, longitude: e.target.value}))} required />
             </div>
-            <Input placeholder="Adresse" value={form.address} onChange={e => setForm(f => ({...f, address: e.target.value}))} />
+            <Input placeholder={locale === "ar" ? "العنوان" : locale === "en" ? "Address" : "Adresse"} value={form.address} onChange={e => setForm(f => ({...f, address: e.target.value}))} />
 
             <div>
-              <p className="text-sm font-medium mb-2">Quartiers d'intervention</p>
+              <p className="text-sm font-medium mb-2">{locale === "ar" ? "أحياء التدخل" : locale === "en" ? "Intervention districts" : "Quartiers d'intervention"}</p>
               <div className="grid grid-cols-3 gap-2 max-h-48 overflow-y-auto border rounded-md p-2">
                 {locations.map(loc => (
                   <label key={loc.id} className="flex items-center gap-2 text-sm">
@@ -105,7 +105,7 @@ export default function NewLocksmithPage() {
             </div>
 
             <div>
-              <p className="text-sm font-medium mb-2">Services proposés</p>
+              <p className="text-sm font-medium mb-2">{locale === "ar" ? "الخدمات المقترحة" : locale === "en" ? "Offered services" : "Services proposés"}</p>
               <div className="grid grid-cols-2 gap-2 max-h-48 overflow-y-auto border rounded-md p-2">
                 {services.map(svc => (
                   <label key={svc.id} className="flex items-center gap-2 text-sm">
@@ -121,8 +121,8 @@ export default function NewLocksmithPage() {
         </Card>
 
         <div className="flex gap-3">
-          <Button type="submit" disabled={loading}>{loading ? "Création..." : "Créer le serrurier"}</Button>
-          <Button type="button" variant="outline" onClick={() => router.back()}>Annuler</Button>
+          <Button type="submit" disabled={loading}>{loading ? (locale === "ar" ? "جارٍ الإنشاء..." : locale === "en" ? "Creating..." : "Création...") : (locale === "ar" ? "إنشاء السراجي" : locale === "en" ? "Create locksmith" : "Créer le serrurier")}</Button>
+          <Button type="button" variant="outline" onClick={() => router.back()}>{locale === "ar" ? "إلغاء" : locale === "en" ? "Cancel" : "Annuler"}</Button>
         </div>
       </form>
     </div>

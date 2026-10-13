@@ -19,11 +19,11 @@ export async function generateMetadata({
 }) {
   const { locale } = await params
   const locales = ["fr", "ar", "en"]
-  const baseUrl = "https://serruiermarrakech.ma"
+  const baseUrl = "https://www.serruriermarrakech.ma"
 
   const alternates: Record<string, string> = {}
   for (const l of locales) {
-    alternates[l === "fr" ? "fr" : l] = `${baseUrl}${l === "fr" ? "" : `/${l}`}`
+    alternates[l] = `${baseUrl}/${l}`
   }
   alternates["x-default"] = `${baseUrl}`
 

@@ -12,9 +12,9 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const title = locale === "ar" ? "المدونة | سراج مراكش" : locale === "en" ? "Blog | Locksmith Marrakech" : "Blog | Serrurier Marrakech"
+  const title = locale === "ar" ? "المدونة" : locale === "en" ? "Blog" : "Blog"
   const description = locale === "ar" ? "مقالات ومعلومات عن خدمات السراجة في مراكش" : locale === "en" ? "Articles and information about locksmith services in Marrakech" : "Articles et informations sur les services de serrurerie à Marrakech"
-  return { title, description, openGraph: generateOpenGraph({ locale, title, description }) }
+  return { title, description, openGraph: generateOpenGraph({ locale, title, description }), alternates: { canonical: `https://www.serruriermarrakech.ma/${locale}/blog`, languages: { fr: "https://www.serruriermarrakech.ma/fr/blog", ar: "https://www.serruriermarrakech.ma/ar/blog", en: "https://www.serruriermarrakech.ma/en/blog", "x-default": "https://www.serruriermarrakech.ma/fr/blog" } } }
 }
 
 export default async function BlogPage({
@@ -43,7 +43,7 @@ export default async function BlogPage({
           const title = locale === "ar" ? article.titleAr : locale === "en" ? article.titleEn : article.titleFr
           const excerpt = locale === "ar" ? article.excerptAr : locale === "en" ? article.excerptEn : article.excerptFr
           return (
-            <Link key={article.id} href={`/${locale === "fr" ? "" : locale}/blog/${article.slug}`}>
+            <Link key={article.id} href={`/${locale}/blog/${article.slug}`}>
               <Card className="hover:shadow-lg transition-shadow overflow-hidden">
                 {article.imageUrl && (
                   <div className="relative h-48">

@@ -18,7 +18,7 @@ export default function LoginPage() {
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
 
-  const prefix = locale === "fr" ? "" : `/${locale}`
+  const prefix = `/${locale}`
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -26,7 +26,7 @@ export default function LoginPage() {
     setError("")
     const result = await signIn("credentials", { email, password, redirect: false })
     if (result?.error) {
-      setError("Email ou mot de passe incorrect")
+      setError(locale === "ar" ? "البريد الإلكتروني أو كلمة المرور غير صحيحة" : locale === "en" ? "Incorrect email or password" : "Email ou mot de passe incorrect")
       setLoading(false)
     } else {
       router.push(`${prefix}/dashboard`)
@@ -44,10 +44,10 @@ export default function LoginPage() {
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
             {error && <p className="text-sm text-destructive text-center">{error}</p>}
-            <Input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <Input type="email" placeholder={locale === "ar" ? "البريد الإلكتروني" : "Email"} value={email} onChange={(e) => setEmail(e.target.value)} required />
             <Input type="password" placeholder={t("password")} value={password} onChange={(e) => setPassword(e.target.value)} required />
             <Button type="submit" className="w-full" disabled={loading}>
-              {loading ? "Connexion..." : t("login")}
+              {loading ? (locale === "ar" ? "جاري الاتصال..." : locale === "en" ? "Signing in..." : "Connexion...") : t("login")}
             </Button>
           </form>
           <div className="mt-4 text-center text-sm">

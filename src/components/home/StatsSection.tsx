@@ -4,22 +4,24 @@ import { motion } from "motion/react"
 import { AnimatedCounter } from "@/components/motion/AnimatedCounter"
 import { Users, MapPin, Clock, Star } from "lucide-react"
 
+type Locale = "fr" | "ar" | "en"
+
 interface StatItem {
   icon: typeof Users
   to: number
   suffix: string
   decimals?: number
-  label: string
+  label: Record<Locale, string>
 }
 
 const STATS: StatItem[] = [
-  { icon: Users, to: 50, suffix: "+", label: "Serruriers partenaires" },
-  { icon: MapPin, to: 600, suffix: "+", label: "Quartiers couverts" },
-  { icon: Clock, to: 30, suffix: " min", label: "Intervention rapide" },
-  { icon: Star, to: 4.8, suffix: "/5", decimals: 1, label: "Note moyenne" },
+  { icon: Users, to: 50, suffix: "+", label: { fr: "Serruriers partenaires", ar: "سراجون شركاء", en: "Partner locksmiths" } },
+  { icon: MapPin, to: 600, suffix: "+", label: { fr: "Quartiers couverts", ar: "أحياء مغطاة", en: "Districts covered" } },
+  { icon: Clock, to: 30, suffix: " min", label: { fr: "Intervention rapide", ar: "تدخل سريع", en: "Fast response" } },
+  { icon: Star, to: 4.8, suffix: "/5", decimals: 1, label: { fr: "Note moyenne", ar: "تقييم متوسط", en: "Average rating" } },
 ]
 
-export function StatsSection() {
+export function StatsSection({ locale }: { locale: Locale }) {
   return (
     <section className="border-b border-border/40 gradient-mesh">
       <div className="container py-14">
@@ -39,7 +41,7 @@ export function StatsSection() {
               <p className="text-3xl md:text-4xl font-bold tracking-tight">
                 <AnimatedCounter to={stat.to} suffix={stat.suffix} decimals={stat.decimals ?? 0} />
               </p>
-              <p className="text-sm text-muted-foreground mt-1.5">{stat.label}</p>
+              <p className="text-sm text-muted-foreground mt-1.5">{stat.label[locale]}</p>
             </motion.div>
           ))}
         </div>

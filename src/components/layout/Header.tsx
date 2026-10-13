@@ -16,10 +16,10 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const { data: session } = useSession()
 
-  const prefix = locale === "fr" ? "" : `/${locale}`
+  const prefix = `/${locale}`
 
   const navLinks = [
-    { href: `/${locale === "fr" ? "" : locale}`, label: t("home") },
+    { href: `/${locale}`, label: t("home") },
     { href: `${prefix}/marrakech`, label: t("locations") },
     { href: `${prefix}/blog`, label: t("blog") },
     { href: `${prefix}/contact`, label: t("contact") },
@@ -29,14 +29,20 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 glass">
       <div className="container flex h-16 items-center justify-between">
         <Link
-          href={`/${locale === "fr" ? "" : locale}`}
+          href={`/${locale}`}
           className="flex items-center gap-2.5 font-bold text-xl group"
         >
           <div className="bg-primary/10 rounded-lg p-1.5 transition-colors group-hover:bg-primary/20">
             <Shield className="h-5 w-5 text-primary" />
           </div>
-          <span className="text-gradient">{locale === "ar" ? "سراج" : "Serrurier"}</span>
-          <span className="hidden sm:inline">{locale === "ar" ? "مراكش" : "Marrakech"}</span>
+          {locale === "ar" ? (
+            <span className="text-gradient">صانع أقفال مراكش</span>
+          ) : (
+            <>
+              <span className="text-gradient">{locale === "en" ? "Locksmith" : "Serrurier"}</span>
+              <span className="hidden sm:inline">Marrakech</span>
+            </>
+          )}
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">
@@ -72,14 +78,14 @@ export function Header() {
             </Link>
           )}
 
-          <Link href="tel:+212600000000">
+          <Link href="tel:+212715758801">
             <Button
               variant="emergency"
               size="sm"
               className="hidden sm:flex gap-2"
             >
               <Phone className="h-4 w-4" />
-              <span className="hidden lg:inline">06 00 00 00 00</span>
+              <span className="hidden lg:inline">+212 715-758801</span>
             </Button>
           </Link>
 
@@ -132,10 +138,10 @@ export function Header() {
                   </Button>
                 </Link>
               )}
-              <Link href="tel:+212600000000" onClick={() => setIsOpen(false)}>
+              <Link href="tel:+212715758801" onClick={() => setIsOpen(false)}>
                 <Button variant="emergency" className="w-full gap-2">
                   <Phone className="h-4 w-4" />
-                  Urgence 24h/24
+                  {locale === "ar" ? "طوارئ 24/24" : locale === "en" ? "24/7 Emergency" : "Urgence 24h/24"}
                 </Button>
               </Link>
             </div>

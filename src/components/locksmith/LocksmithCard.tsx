@@ -16,6 +16,7 @@ interface LocksmithCardProps {
   emergencyAvailable?: boolean
   available247?: boolean
   isVerified?: boolean
+  locale?: string
   locations?: { name: string; slug: string }[]
 }
 
@@ -29,6 +30,7 @@ export function LocksmithCard({
   emergencyAvailable,
   available247,
   isVerified,
+  locale = "fr",
   locations,
 }: LocksmithCardProps) {
   return (
@@ -42,12 +44,12 @@ export function LocksmithCard({
           </Avatar>
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-1">
-              <Link href={`/serrurier/${slug}`} className="font-semibold text-lg hover:text-primary truncate">
+              <Link href={`/${locale}/s/${slug}`} className="font-semibold text-lg hover:text-primary truncate">
                 {companyName}
               </Link>
               {isVerified && (
                 <Badge variant="success" className="shrink-0">
-                  <Shield className="h-3 w-3 mr-1" /> Vérifié
+                  <Shield className="h-3 w-3 mr-1" /> {locale === "ar" ? "متحقق منه" : locale === "en" ? "Verified" : "Vérifié"}
                 </Badge>
               )}
             </div>
@@ -57,15 +59,15 @@ export function LocksmithCard({
             <div className="flex items-center gap-4 text-sm">
               <span className="flex items-center gap-1">
                 <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                {rating.toFixed(1)} ({reviewCount} avis)
+                {rating.toFixed(1)} ({reviewCount} {locale === "ar" ? "تقييم" : locale === "en" ? "reviews" : "avis"})
               </span>
-              {emergencyAvailable && <Badge variant="emergency">Urgence</Badge>}
+              {emergencyAvailable && <Badge variant="emergency">{locale === "ar" ? "طوارئ" : locale === "en" ? "Emergency" : "Urgence"}</Badge>}
               {available247 && <Badge variant="warning">24h/24</Badge>}
             </div>
             {locations && locations.length > 0 && (
               <div className="flex flex-wrap gap-1 mt-2">
                 {locations.slice(0, 3).map((loc) => (
-                  <Link key={loc.slug} href={`/marrakech/${loc.slug}`} className="text-xs text-primary hover:underline">
+                  <Link key={loc.slug} href={`/${locale}/marrakech/${loc.slug}`} className="text-xs text-primary hover:underline">
                     <MapPin className="h-3 w-3 inline mr-0.5" />{loc.name}
                   </Link>
                 ))}
@@ -74,7 +76,7 @@ export function LocksmithCard({
           </div>
           <Link href={`tel:${phone}`}>
             <Button variant="default" size="sm" className="shrink-0">
-              <Phone className="h-4 w-4 mr-1" /> Appeler
+              <Phone className="h-4 w-4 mr-1" /> {locale === "ar" ? "اتصال" : locale === "en" ? "Call" : "Appeler"}
             </Button>
           </Link>
         </div>

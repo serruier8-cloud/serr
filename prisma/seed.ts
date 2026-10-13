@@ -36,10 +36,10 @@ async function main() {
       postalPrefix: "40",
       image: "/images/marrakech.jpg",
       metaTitleFr: "Serrurier Marrakech - Dépannage Serrurerie 7j/7",
-      metaTitleAr: "سراج مراكش - إصلاح الأقفال 7/7",
+      metaTitleAr: "صانع أقفال مراكش - إصلاح الأقفال 7/7",
       metaTitleEn: "Locksmith Marrakech - 24/7 Emergency Locksmith",
       metaDescFr: "🔑 Serrurier Marrakech. Intervention rapide 30 min. Ouverture de porte, changement serrure, blindage. Devis gratuit. Artisans qualifiés 7j/7.",
-      metaDescAr: "🔑 سراج مراكش. تدخل سريع 30 دقيقة. فتح أبواب، تغيير أقفال، تدريع. تقدير مجاني. حرفيون مؤهلون 7/7.",
+      metaDescAr: "🔑 صانع أقفال مراكش. تدخل سريع 30 دقيقة. فتح أبواب، تغيير أقفال، تدريع. تقدير مجاني. حرفيون مؤهلون 7/7.",
       metaDescEn: "🔑 Locksmith Marrakech. Fast 30 min response. Door opening, lock change, reinforcement. Free quote. Qualified craftsmen 24/7.",
     },
   })

@@ -44,7 +44,7 @@ export async function GET(request: NextRequest) {
       name: locale === "ar" ? s.nameAr : locale === "en" ? s.nameEn : s.nameFr,
       slug: s.slug,
       type: "service" as const,
-      subtype: "Service",
+      subtype: locale === "ar" ? "خدمة" : locale === "en" ? "Service" : "Service",
     })),
   ]
 

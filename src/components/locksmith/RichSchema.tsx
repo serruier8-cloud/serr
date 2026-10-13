@@ -16,8 +16,13 @@ interface ServiceData {
   name: string
   description: string
   provider: string
+  providerUrl?: string
+  providerTelephone?: string
   areaServed: string
   priceRange?: string
+  priceFrom?: number
+  currency?: string
+  serviceType?: string
 }
 
 interface FAQData {
@@ -35,10 +40,15 @@ interface ProductData {
   currency: string
   category: string
   areaServed: string
+  brand?: string
 }
 
+const OPENING_HOURS_24_7 = [
+  { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "00:00", closes: "23:59" },
+]
+
 export function buildLocalBusinessSchema(data: LocalBusinessData) {
-  const schema: any = {
+  const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: data.name,
@@ -57,9 +67,9 @@ export function buildLocalBusinessSchema(data: LocalBusinessData) {
       latitude: data.geo.latitude,
       longitude: data.geo.longitude,
     },
-    priceRange: data.priceRange || "$$",
+    priceRange: data.priceRange || "MAD 150 - MAD 800",
     ...(data.image && { image: data.image }),
-    ...(data.openingHours && { openingHoursSpecification: data.openingHours.map(h => ({ "@type": "OpeningHoursSpecification", ...JSON.parse(h) })) }),
+    openingHoursSpecification: data.openingHours ? data.openingHours.map(h => ({ "@type": "OpeningHoursSpecification", ...JSON.parse(h) })) : OPENING_HOURS_24_7,
     ...(data.aggregateRating && {
       aggregateRating: {
         "@type": "AggregateRating",
@@ -78,9 +88,24 @@ export function buildServiceSchema(data: ServiceData) {
     "@type": "Service",
     name: data.name,
     description: data.description,
-    provider: { "@type": "LocalBusiness", name: data.provider },
+    ...(data.serviceType && { serviceType: data.serviceType }),
+    provider: {
+      "@type": "LocalBusiness",
+      name: data.provider,
+      ...(data.providerUrl && { url: data.providerUrl }),
+      ...(data.providerTelephone && { telephone: data.providerTelephone }),
+    },
     areaServed: { "@type": "City", name: data.areaServed },
-    ...(data.priceRange && { offers: { "@type": "Offer", priceSpecification: { "@type": "PriceSpecification", price: data.priceRange } } }),
+    hoursAvailable: OPENING_HOURS_24_7,
+    ...((data.priceRange || data.priceFrom) && {
+      offers: {
+        "@type": "Offer",
+        priceCurrency: data.currency || "MAD",
+        ...(data.priceFrom != null && { price: data.priceFrom }),
+        ...(data.priceRange && { priceSpecification: { "@type": "PriceSpecification", price: data.priceRange } }),
+        priceValidUntil: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString().split("T")[0],
+      },
+    }),
   }
 }
 
@@ -115,6 +140,7 @@ export function buildProductSchema(data: ProductData) {
     "@type": "Product",
     name: data.name,
     description: data.description,
+    ...(data.brand && { brand: { "@type": "Brand", name: data.brand } }),
     offers: {
       "@type": "Offer",
       price: data.price,

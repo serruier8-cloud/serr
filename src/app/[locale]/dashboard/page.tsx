@@ -11,7 +11,7 @@ export default async function DashboardPage({
 }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: "dashboard" })
-  const prefix = locale === "fr" ? "" : `/${locale}`
+  const prefix = `/${locale}`
 
   const [locksmithCount, locationCount, serviceCount, reviewCount, recentLocksmiths] = await Promise.all([
     prisma.locksmith.count(),
